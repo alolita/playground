@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery UI Menu - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script>
+  $(function() {
+    $( "#menu" ).menu();
+  });
+  </script>
+  <style>
+  .ui-menu { width: 150px; }
+  </style>
+</head>
+<body>
+ 
+<ul id="menu">
+  <li class="ui-state-disabled"><a href="#">Agra</a></li>
+  <li><a href="#">Alexandria</a></li>
+  <li><a href="#">Arlington</a></li>
+  <li><a href="#">Azamgarh</a></li>
+  <li>
+    <a href="#">Delphi</a>
+    <ul>
+      <li class="ui-state-disabled"><a href="#">Alexandria</a></li>
+      <li><a href="#">Saarland</a></li>
+      <li><a href="#">Salzburg</a></li>
+    </ul>
+  </li>
+  <li><a href="#">Saarland</a></li>
+  <li>
+    <a href="#">Salzburg</a>
+    <ul>
+      <li>
+        <a href="#">Delphi</a>
+        <ul>
+          <li><a href="#">Alexandria</a></li>
+          <li><a href="#">Saarland</a></li>
+          <li><a href="#">Salzburg</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Delphi</a>
+        <ul>
+          <li><a href="#">Alexandria</a></li>
+          <li><a href="#">Saarland</a></li>
+          <li><a href="#">Salzburg</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Perch</a></li>
+    </ul>
+  </li>
+  <li class="ui-state-disabled"><a href="#">Ajanta</a></li>
+</ul>
+ 
+ 
+</body>
+</html>
+
